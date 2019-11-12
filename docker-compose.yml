@@ -9,6 +9,7 @@ services:
     volumes:
        - ./apps:/opt/spark-apps
        - ./data:/opt/spark-data
+       - /mnt:/mnt
     environment:
       - "SPARK_LOCAL_IP=spark-master"
   spark-worker:
